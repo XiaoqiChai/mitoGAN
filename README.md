@@ -12,23 +12,24 @@
 
 ## Steps to execute the codes:
 1. Download the codes
-'''
+```
 git clone https://github.com/XiaoqiChai/mitoGAN
 cd mitoGAN
-'''
+```
 2. Download the dataset 
 3. Run "make_data.m"
 4. Train CycleGAN or pix2pix by 
-'''
+```
 cd CycleGAN
 python CycleGAN-keras.py
-'''
+```
 or
-'''
+```
 cd pix2pix
 python pix2pix-keras.py
-'''
+```
 5. To predict the test data, in either folder, type
-'''
+```
 python predict.py
-'''
+```
+6. To make the dataset for Unet segmentation, in either folder, run "make_Unet_set.m"
