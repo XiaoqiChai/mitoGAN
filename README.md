@@ -12,6 +12,9 @@ International Symposium on Biomedical Imaging (ISBI), 2019
 7. matplotlib v1.5.1
 8. Matlab R2018a
 
+## Acknowledgement
+The codes for traing CycleGAN and pix2pix are modified from https://github.com/tjwei/GANotebooks.
+
 ## Steps to execute the codes:
 1. Download the codes
 ```
