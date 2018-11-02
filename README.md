@@ -1,4 +1,5 @@
 # Synthetic microscopy image generation with pix2pix and CycleGAN
+Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang
 
 ## Prerequisite to use this code:
 1. Python >= v2.7 or v3.6
@@ -17,10 +18,7 @@ git clone https://github.com/XiaoqiChai/mitoGAN
 cd mitoGAN
 ```
 2. Download and extract the dataset 
-```
-wget https://cmu.box.com/shared/static/zzen200cng2ymdgu6rukgwukflrhyr4r.tar
-tar -xvf zzen200cng2ymdgu6rukgwukflrhyr4r.tar
-```
+
 3. Run `make_data.m`
 4. Train CycleGAN or pix2pix by 
 ```
