@@ -16,7 +16,11 @@
 git clone https://github.com/XiaoqiChai/mitoGAN
 cd mitoGAN
 ```
-2. Download the dataset 
+2. Download and extract the dataset 
+```
+wget https://cmu.box.com/shared/static/zzen200cng2ymdgu6rukgwukflrhyr4r.tar
+tar -xvf zzen200cng2ymdgu6rukgwukflrhyr4r.tar
+```
 3. Run `make_data.m`
 4. Train CycleGAN or pix2pix by 
 ```
