@@ -1,5 +1,6 @@
 # Synthetic microscopy image generation with pix2pix and CycleGAN
-Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang__
+Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang
+
 International Symposium on Biomedical Imaging (ISBI), 2019
 
 ## Prerequisite to use this code:
