@@ -1,4 +1,4 @@
-# Synthetic microscopy image generation with pix2pix and CycleGAN
+# CHARACTERIZING IMAGES SYNTHESIZED BY GENERATIVE ADVERSARIAL NETWORKS FOR SEGMENTING FLUORESCENCE MICROSCOPY IMAGES
 Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang  
 International Symposium on Biomedical Imaging (ISBI), 2019
 
