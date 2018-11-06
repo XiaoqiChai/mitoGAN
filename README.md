@@ -52,4 +52,4 @@ to *characterization/*.
 Then run `SSIM.m` or `background_chara.m`.
 
 
-Codes for Unet segmentation is concluded in `unet_seg.py`.
+Codes for Unet segmentation and IOU calculation is concluded in `unet_seg.py`.
