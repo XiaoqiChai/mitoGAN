@@ -22,6 +22,10 @@ git clone https://github.com/XiaoqiChai/mitoGAN
 cd mitoGAN
 ```
 2. Download and extract the dataset 
+```
+wget https://cmu.box.com/shared/static/zzen200cng2ymdgu6rukgwukflrhyr4r.tar
+tar -xvf zzen200cng2ymdgu6rukgwukflrhyr4r.tar
+```
 
 3. Run `make_data.m`
 4. Train CycleGAN or pix2pix by 
@@ -46,4 +50,6 @@ python predict.py
 and *real_images_test* 
 to *characterization/*. 
 Then run `SSIM.m` or `background_chara.m`.
-8. To perform Unet segmentation, 
+
+
+Codes for Unet segmentation is concluded in 
