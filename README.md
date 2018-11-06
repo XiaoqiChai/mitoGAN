@@ -1,4 +1,4 @@
-# CHARACTERIZING IMAGES SYNTHESIZED BY GENERATIVE ADVERSARIAL NETWORKS FOR SEGMENTING FLUORESCENCE MICROSCOPY IMAGES
+# Characterizing Images Synthesized by Generative Adversarial Networks for Segmenting Fluorescence Microscopy Images
 Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang  
 International Symposium on Biomedical Imaging (ISBI), 2019
 
