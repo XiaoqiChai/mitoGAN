@@ -52,4 +52,4 @@ to *characterization/*.
 Then run `SSIM.m` or `background_chara.m`.
 
 
-Codes for Unet segmentation is concluded in 
+Codes for Unet segmentation is concluded in `unet_seg.py`.
