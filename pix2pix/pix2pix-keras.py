@@ -227,8 +227,8 @@ errD_all = []
 errG_all = []
 errL1_all = []
 val_batch = minibatch(valAB, batchSize, direction)
+t0 = time.time()
 for ep in range(epochs): 
-    t0 = time.time()
     shuffle(trainAB)
     train_batch = minibatch(trainAB, batchSize, direction)
     for trainA, trainB in train_batch:
@@ -237,8 +237,8 @@ for ep in range(epochs):
         errG_, errL1_ = netG_train([trainA, trainB])
         errG += errG_
         errL1 += errL1_
-    print('[%d/%d] Loss_D: %f Loss_G: %f loss_L1: %f'
-    % (ep, epochs, errD, errG, errL1), time.time()-t0)
+    print('[%d/%d] Loss_D: %f Loss_G: %f loss_L1: %f %f'
+    % (ep, epochs, errD, errG, errL1, time.time()-t0))
     errD_all.append(errD)
     errG_all.append(errG)
     errL1_all.append(errL1)
@@ -261,17 +261,17 @@ netD.save('netD.h5')
 
 #%%
 
-plt.figure(1)
+plt.figure(2)
 plt.plot(range(epochs),errG_all)
 plt.title("errG")
 plt.savefig(os.path.join(save_path,"errG.png"))
 
-plt.figure(2)
+plt.figure(3)
 plt.plot(range(epochs),errD_all)
 plt.title("errD")
 plt.savefig(os.path.join(save_path,"errD.png"))
 
-plt.figure(3)
+plt.figure(4)
 plt.plot(range(epochs),errL1_all)
 plt.title("errL1")
 plt.savefig(os.path.join(save_path,"errL1.png"))
