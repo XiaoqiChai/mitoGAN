@@ -1,5 +1,4 @@
-# QUALITY ASSESSMENT OF SYNTHETIC FLUORESCENCE MICROSCOPY IMAGES FOR IMAGE SEGMENTATION
-IMAGE SEGMENTATIONMicroscopy Images
+# Quality Assessment of Synthetic Fluorescence Microscopy Images for Image Segmentation
 Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang  
 International Conference on Image Processing (ICIP), 2019
 
