@@ -1,6 +1,7 @@
-# Characterizing Images Synthesized by Generative Adversarial Networks for Segmenting Fluorescence Microscopy Images
+# QUALITY ASSESSMENT OF SYNTHETIC FLUORESCENCE MICROSCOPY IMAGES FOR IMAGE SEGMENTATION
+IMAGE SEGMENTATIONMicroscopy Images
 Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang  
-International Symposium on Biomedical Imaging (ISBI), 2019
+International Conference on Image Processing (ICIP), 2019
 
 ## Prerequisite to use this code:
 1. Python >= v2.7 or v3.6
