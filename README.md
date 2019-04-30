@@ -49,7 +49,7 @@ python predict.py
 *sim_images_test* 
 and *real_images_test* 
 to *characterization/*. 
-Then run `SSIM.m` or `background_chara.m`.
+Then run `characterization/characterization.m`.
 
 
 Codes for Unet segmentation and IOU calculation is concluded in `unet_seg.py`.
