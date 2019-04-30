@@ -46,10 +46,10 @@ python predict.py
 7. To characterize the images, copy and paste:  
 *CycleGAN/CycleGAN/test_predicted_cgan*,   
 *pix2pix/pix2pix/test_predicted_pgan*,  
-*sim_images_test*  
-and *real_images_test*   
+*sim_images_test*,  
+and *real_images_test*,   
 to:  
-*characterization/*.  
+*characterization/*  
 Then run `characterization/characterization.m`.
 
 
