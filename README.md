@@ -2,7 +2,7 @@
 Yile Feng, Xiaoqi Chai, Qinle Ba, and Ge Yang  
 International Conference on Image Processing (ICIP), 2019
 
-## Prerequisite to use this code:
+## Recommended version to use this code:
 1. Python >= v2.7 or v3.6
 2. Keras v2.2.0
 3. Tensorflow v1.9.0
