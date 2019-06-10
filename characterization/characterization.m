@@ -90,6 +90,38 @@ relative_sharp_sim = sharp_sim_all./sharp_gt_all;
 [~,pCSbfm] = kstest2(relative_sharp_cgan,relative_sharp_sim);
 [~,pGSbfm] = kstest2(relative_sharp_pgan,relative_sharp_sim);
 
+%% Section to calculate SFM
+fore_cgan_all = zeros(length(image_names),1);
+fore_pgan_all = zeros(length(image_names),1);
+fore_sim_all = zeros(length(image_names),1);
+
+for i = 1:length(image_names)
+    
+    % Read the images
+    im_gt = imread(fullfile('real_images_test',image_names{i}));
+    im_pre_cgan = imread(fullfile('test_predicted_cgan',image_names{i}));
+    im_pre_pgan = imread(fullfile('test_predicted_pgan',image_names{i}));
+    im_pre_sim = imread(fullfile('sim_images_test',image_names{i}));
+    mask = imread(fullfile('testA',image_names{i}));
+    img_size = size(im_gt);
+    mask(mask>0) = 1;
+    mask = logical(mask);
+    
+    % Extract image sharpness of each individual images
+    corr_cgan = corr2(double(im_gt(mask)),double(im_pre_cgan(mask)));
+    corr_pgan = corr2(double(im_gt(mask)),double(im_pre_pgan(mask)));
+    corr_sim = corr2(double(im_gt(mask)),double(im_pre_sim(mask)));
+    
+    fore_cgan_all(i) = corr_cgan; %#ok<*SAGROW>
+    fore_pgan_all(i) = corr_pgan;
+    fore_sim_all(i) = corr_sim;
+    
+end
+
+% Calculate the p-values
+[~,pCGsfm] = kstest2(fore_cgan_all,fore_pgan_all);
+[~,pCSsfm] = kstest2(fore_cgan_all,fore_sim_all);
+[~,pGSsfm] = kstest2(fore_pgan_all,fore_sim_all);
 
 %% Calculate basic statistics
 %{
@@ -106,5 +138,6 @@ stats_sim = [mean(ssim_test_sim),std(ssim_test_sim),mean(psnr_test_sim),std(psnr
     mean(cross_test_sim),std(cross_test_sim)];
 %}
 
-xlswrite('Sorensen_distance.xlsx',[distance_cgan_all,distance_pgan_all,distance_sim_all])
-xlswrite('Blurring_sharpness.xlsx',[relative_sharp_cgan,relative_sharp_pgan,relative_sharp_sim])
+xlswrite('NFM.xlsx',[distance_cgan_all,distance_pgan_all,distance_sim_all])
+xlswrite('BFM.xlsx',[relative_sharp_cgan,relative_sharp_pgan,relative_sharp_sim])
+xlswrite('SFM.xlsx',[fore_cgan_all,fore_pgan_all,fore_sim_all])
