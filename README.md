@@ -45,6 +45,7 @@ python predict.py
 6. To make the dataset for Unet segmentation, in either folder, run `make_Unet_set.m`
 7. To characterize the images, copy and paste the four folders:  
 *CycleGAN/CycleGAN/test_predicted_cgan*,   
+*CycleGAN/CycleGAN/testA*,
 *pix2pix/pix2pix/test_predicted_pgan*,  
 *sim_images_test*,  
 and *real_images_test*,   
